@@ -15,7 +15,7 @@ class PasswordReset extends Model {
   }
 
   static get dates() {
-    return ['created_at', 'updated_at', 'expires_at']
+    return super.dates.concat(['created_at', 'updated_at', 'expires_at'])
   }
 }
 
